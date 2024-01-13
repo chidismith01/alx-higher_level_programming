@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 
 /**
  * insert_node - inserts a number into a sorted singly linked list.
@@ -8,7 +8,7 @@ include "lists.h"
  * return: return -NULL if false
  */
 
-listint_t *insert_node(listint_t **head, int number);
+listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *node = *head, *new;
 	new = malloc(sizeof(listint_t));
