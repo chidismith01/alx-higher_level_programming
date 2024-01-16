@@ -60,6 +60,12 @@ if __name__ == "__main__":
 
 
 
+
+
+
+
+
+
 2. How to make a script dynamic!
 Write a program that prints the number of and the list of its arguments.
 
