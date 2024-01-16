@@ -1,5 +1,7 @@
 0x02. Python - import & modules
 
+
+
 0. Import a simple function from a simple file
 Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 
@@ -22,6 +24,9 @@ if __name__ == "__main__":
     a = 1
     b = 2
     print("{} + {} = {}".format(a, b, add(a, b)))
+
+
+
 
 
 1. My first toolbox!
@@ -50,6 +55,9 @@ if __name__ == "__main__":
     print("{} - {} = {}".format(a, b, sub(a, b)))
     print("{} * {} = {}".format(a, b, mul(a, b)))
     print("{} / {} = {}".format(a, b, div(a, b)))
+
+
+
 
 
 2. How to make a script dynamic!
@@ -83,6 +91,8 @@ if __name__ == "__main__":
 
 
 
+
+
 3. infinite addiction
 
 filename: 3-infinite_add.py
@@ -102,4 +112,27 @@ if __name__ == "__main__": 		"""A python idion that helps to determine if the sc
     total = 0			"""initializing '0' to a variable 'total'"""
     for i in range(len(sys.argv) - 1):	"""This for loop iterates the number of arguments passed in the command line"""
         total += int(sys.argv[i + 1])	"""Assign the addition of the arguments to variable 'total' and cast as integers: int()"""
-    print("{}".format(total))		"""Print() function formats the value of the variable 'total' to the stdout
+    print("{}".format(total))		"""Print() function formats the value of the variable 'total' to the stdout.
+
+
+
+
+4. Who are you?
+Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally).
+
+You should print one name per line, in alpha order
+You should print only names that do not start with __
+Your code should not be executed when imported
+Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
+
+4-hidden_discovery.py: fileName
+#!/usr/bin/python3 			"""shebang first line for Os to know specified interpreter"""
+
+if __name__ == "__main__": 		"""Program will iterate if the file name is the main file, then exectes, else NULL"""
+    
+    import hidden_4   			"""Accesing the names defined in 'hidden_4'"""
+    
+    names = dir(hidden_4)		"""The names defined in the imported file are accessed using the dir() funtion and assigned to variable 'names'"""
+    for name in names:			"""A conditional statement for the hidden names exception"""
+        if name[:2] != "__":		"""If the first two characters of the name starts with "__" two underscores"""
+            print(name)			"""Output the variable 'name'"""
