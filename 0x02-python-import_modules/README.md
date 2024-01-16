@@ -136,3 +136,50 @@ if __name__ == "__main__": 		"""Program will iterate if the file name is the mai
     for name in names:			"""A conditional statement for the hidden names exception"""
         if name[:2] != "__":		"""If the first two characters of the name starts with "__" two underscores"""
             print(name)			"""Output the variable 'name'"""
+
+
+
+
+
+5. Everything can be imported
+
+Write a program that imports the variable a from the file variable_load_5.py and prints its value.
+
+You are not allowed to use * for importing or __import__
+Your code should not be executed when imported
+
+
+fileName: 5-variable_load.py
+
+#!/usr/bin/python3			"""shabang first line: indicates the type of interpreter to be used"""
+if __name__ == "__main__":		"""A conditional statement, if this is main file interprete block of code else false"""
+
+    import sys				
+
+    num_args = len(sys.argv) - 1	"Assigns the value of the lenght of the arguments in the commands to num_args excluding index[0]"
+    if num_args != 3:			
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")		
+        sys.exit(1)
+
+    operator = sys.argv[2]		"""A conditional statement for arithmetic operators"""
+    op = operator
+    if op != '+' and op != '-' and op != '*' and op != '/':
+        print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
+
+    from calculator_1 import add, sub, mul, div		"""funtions of the the module name 'calcultor_1' imported"""
+    a = int(sys.argv[1])  	"""Casting the second argument in the command line also index[1] as interges and assigned to variable 'a' 
+    b = int(sys.argv[3])	"""Casting the second argument in the command line also index[1] as interges and assigned to variable 'b'
+    if op == '+':
+        print("{} + {} = {}".format(a, b, add(a, b)))
+    elif op == '-':
+        print("{} - {} = {}".format(a, b, sub(a, b)))
+    elif op == '*':
+        print("{} * {} = {}".format(a, b, mul(a, b)))
+    else:
+        print("{} / {} = {}".format(a, b, div(a, b)))
+
+
+
+
+
