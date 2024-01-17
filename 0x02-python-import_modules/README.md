@@ -60,6 +60,12 @@ if __name__ == "__main__":
 
 
 
+
+
+
+
+
+
 2. How to make a script dynamic!
 Write a program that prints the number of and the list of its arguments.
 
@@ -96,6 +102,7 @@ if __name__ == "__main__":
 3. infinite addiction
 
 filename: 3-infinite_add.py
+
 Write a program that prints the result of the addition of all arguments
 
 1. The output should be the result of the addition of all arguments, 
@@ -126,6 +133,8 @@ Your code should not be executed when imported
 Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
 
 4-hidden_discovery.py: fileName
+
+
 #!/usr/bin/python3 			"""shebang first line for Os to know specified interpreter"""
 
 if __name__ == "__main__": 		"""Program will iterate if the file name is the main file, then exectes, else NULL"""
@@ -150,6 +159,7 @@ Your code should not be executed when imported
 
 
 fileName: 5-variable_load.py
+
 
 #!/usr/bin/python3			"""shabang first line: indicates the type of interpreter to be used"""
 if __name__ == "__main__":		"""A conditional statement, if this is main file interprete block of code else false"""
