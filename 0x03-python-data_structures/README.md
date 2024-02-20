@@ -32,6 +32,7 @@ If idx is out of range (> of number of element in my_list), the function should 
 You are not allowed to import any module
 You are not allowed to use try/except
 
+
 #!/usr/bin/python3
 def element_at(my_list, idx):
     if idx < 0 or idx > len(my_list) - 1:

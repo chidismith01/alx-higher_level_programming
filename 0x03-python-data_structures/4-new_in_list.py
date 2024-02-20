@@ -4,6 +4,8 @@ This module provides a function that replaces
 an element in my_list in a given position without
 modifying the original list
 """
+
+
 def new_in_list(my_list, idx, element):
     """
     Creating a new list with an element replaced
@@ -20,9 +22,9 @@ def new_in_list(my_list, idx, element):
 
     """
     replace_list: This variabe is used to hold the 
-                   value of the my_list
+    value of the my_list
     replace_list[idx]: This shows the index or position to be
-                       replaced with the value of the element
+    replaced with the value of the element
     """
 
     replace_list = list(my_list)
