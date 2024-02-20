@@ -15,6 +15,6 @@ def multiple_returns(sentence):
         tuple: A tuple containing the length of
           the string and its first character.
     """
-    if  sentence == "":
+    if sentence == "":
         return (0, None)
     return (len(sentence), sentence[0])
