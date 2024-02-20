@@ -17,12 +17,14 @@ def new_in_list(my_list, idx, element):
     """
     if idx < 0 or idx > (len(my_list) - 1):
         return my_list
+
     """
     replace_list: This variabe is used to hold the 
                    value of the my_list
     replace_list[idx]: This shows the index or position to be
                        replaced with the value of the element
     """
+
     replace_list = list(my_list)
-    replace_lis[idx] = element
+    replace_list[idx] = element
     return replace_list
