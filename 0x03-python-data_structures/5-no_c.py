@@ -14,7 +14,7 @@ def no_c(my_string):
         str: The modified string with 'c' removed.
     """
     remove_char = ""
-    for char in my_string:
+    for _, char in enumerate(my_string):
         if char.lower() != 'c':
             remove_char += char
         return remove_char
