@@ -21,8 +21,7 @@ def new_in_list(my_list, idx, element):
         return my_list
 
     """
-    replace_list: This variabe is used to hold the 
-    value of the my_list
+    Replace_list: This variabe is used to hold the value of the my_list
     replace_list[idx]: This shows the index or position to be
     replaced with the value of the element
     """
