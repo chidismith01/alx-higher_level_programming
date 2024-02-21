@@ -11,7 +11,7 @@ def divisible_by_2(my_list=[]):
 
     Args:
         my_list(list)_: The list to check.
-    
+
     Return:
     list: A list of booleans indicating if each element is divisible by 2
     """
