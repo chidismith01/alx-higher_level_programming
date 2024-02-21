@@ -16,7 +16,7 @@ def divisible_by_2(my_list=[]):
     list: A list of booleans indicating if each element is divisible by 2
     """
     mul = []
-    for _. num in enumerate(my_list):
+    for _, num in enumerate(my_list):
         if num % 2 == 0:
             mul.append(True)
         else:
