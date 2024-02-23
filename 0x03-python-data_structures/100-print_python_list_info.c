@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <Python.h>
 
 /**
  * print_python_list_info - prints info about ython list
@@ -24,4 +23,3 @@ void print_python_list_info(PyObject *p)
         printf("Element %ld: %s\n", i, Py_TYPE(item)->tp_name);
     }
 }
-
