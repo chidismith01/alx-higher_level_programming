@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <Python.h>
+#include "Python.h"
 
 /**
  * print_python_list_info - prints info about ython list
  * @p: PyObject
  */
 
-void print_python_list_info(PyObject *p)
+void print_python_list_info(Py_Object *p)
 {
     long int size, i;
     PyListObject *list;
-    PyObject *item;
+    Py_Object *item;
 
     size = Py_SIZE(p);
     printf("[*] Size of the Python List = %ld\n", size);
